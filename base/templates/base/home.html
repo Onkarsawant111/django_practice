@@ -1,8 +1,8 @@
 {% extends 'main.html' %}
 {% block content %}
 
-{% for i in rooms %}
-<h2>{{i.id}}-{{i.name}}</h2>
+{% for i in data %}
+<h2><a href="room/{{i.id}}">{{i.id}}-{{i.name}}</a></h2>
 {% endfor %}
 
 {% endblock content %}

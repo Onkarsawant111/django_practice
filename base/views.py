@@ -17,8 +17,9 @@ from django.shortcuts import render
 #     return render(request,"base/room.html",context)
 
 
-#222. for loop django template
-# name = ["onkar",'raj','max']
-# def home(request):
-#     data = {'name':name}
-#     return render(request,'base/home.html',data)
+# 222. for loop django template
+name = ["onkar",'raj','max']
+def home(request):
+    data = {'name':name}
+    return render(request,'base/home.html',data)
+

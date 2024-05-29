@@ -6,10 +6,17 @@
 {% endfor %} -->
 
 
-<!-- 222. for loop django template -->
-<!-- {% for i in name %}
-<h1>{{forloop.first}}-{{i}}</h1>
-{% endfor %} -->
+ <!-- 222. for loop django template  -->
+{% for i in name %}
+{% if "m" in i %}
+<h1>{{forloop.counter}}-{{i}}</h1>
+{% elif "n" in i %}
+<h1>{{forloop.counter}}-{{i}}</h1>
+{% endif %}
+{% endfor %}
+
+
+
 
 
 
